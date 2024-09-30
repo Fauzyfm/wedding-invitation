@@ -56,7 +56,7 @@ function kirimWhatsApp() {
         var konfirmasi = 'Lebih dari 2 Orang'
     }
 
-    var nomorWA = '6285155217688'; // Ganti dengan nomor WhatsApp tujuan
+    var nomorWA = '6281382820300'; // Ganti dengan nomor WhatsApp tujuan
     var pesan = `Halo, Saya *${nama}*, ingin melakukan konfirmasi kehadiran di acara pernikahan _____________. Alamat: ${alamat}. Konfirmasi kehadiran: ${konfirmasi}.`;    
 
 
