@@ -78,3 +78,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// menangkap paramater pada url
+    // Function to get the 'to' parameter from the URL
+    function getInviteeName() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('to') || 'Tamu Undangan'; // Default name if 'to' is not provided
+    }
+
+    // Inject the invitee name into the HTML content
+    document.addEventListener("DOMContentLoaded", function () {
+        const inviteeName = getInviteeName();
+        const inviteeNameElement = document.getElementById('tamu-undangan');
+        if (inviteeNameElement) {
+            inviteeNameElement.textContent = inviteeName;
+        }
+    });
+
