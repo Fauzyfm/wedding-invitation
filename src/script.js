@@ -70,7 +70,7 @@ function kirimWhatsApp() {
 // open invitation
 document.addEventListener("DOMContentLoaded", function() {
     // Lock scroll on page load
-    // document.body.classList.add("no-scroll");
+    document.body.classList.add("no-scroll");
 
     // Unlock scroll when button is clicked
     document.getElementById("open-invitation").addEventListener("click", function() {
@@ -93,4 +93,9 @@ document.addEventListener("DOMContentLoaded", function() {
             inviteeNameElement.textContent = inviteeName;
         }
     });
+
+
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
 

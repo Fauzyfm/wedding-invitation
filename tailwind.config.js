@@ -14,6 +14,7 @@ module.exports = {
         abu: "#DDDDDD",
         emasTua: "#836B24",
         biruGelap: "#040A16",
+        hijaugelap: "#132A13",
       }
     },
   },
