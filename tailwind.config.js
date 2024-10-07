@@ -7,6 +7,7 @@ module.exports = {
         judul : "Playball",
         cinzel : "Cinzel",
         inter : "Inter",
+        ebGarmond: "EB+Garamond",
       },
       colors: {
         emas: "#B79A4B",
