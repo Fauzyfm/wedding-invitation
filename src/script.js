@@ -94,8 +94,40 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-
+    // membuat website ketika di refresh langsung ke page pertama/halaman atas
     window.onload = function () {
       window.scrollTo(0, 0);
     };
 
+
+    const musicButton = document.getElementById('music')
+    const navigation = document.getElementById('navigation')
+    const musicAudio = document.getElementById('music-audio') 
+    const isiMusic = document.getElementById('isi-music')
+    let isPlaying = false;
+
+    document.getElementById('open-invitation').addEventListener('click', function() {
+        musicButton.classList.remove('hidden')
+        musicButton.classList.add('fade-up')
+        musicButton.classList.add('flex')
+
+
+        navigation.classList.remove('hidden')
+        navigation.classList.add('fade-up')
+
+        musicAudio.play()
+    })
+
+    musicButton.addEventListener('click', function () {
+        if (!isPlaying) {
+            musicAudio.play()
+            isiMusic.innerText = "⏸"
+          } else {
+            musicAudio.pause()
+            isiMusic.innerText = "▶"
+          }
+          isPlaying = !isPlaying;
+    })
+
+
+    

@@ -37,6 +37,7 @@
 </head>
 <body class="bg-birdong">
 
+
     <div class="lg:flex">
         <!-- konten kiri -->
         <div class="sticky top-0 bg-blue-950 w-full hidden lg:block lg:w-[75%] h-screen">
@@ -45,11 +46,34 @@
 
         <!-- konten kanan -->
         <div class="lg:w-[25%] overflow-x-hidden ">
+
+
+
             <!-- h-[8300px] -->
-            <div class="mx-auto max-w-md h-[8700px] overflow-x-hidden">
+            <div class="mx-auto max-w-md h-[8700px] overflow-x-hidden relative">
                 
                 <!-- section 1 -->
                 <div class="bg-cover bg-center w-full h-screen p-4 relative" style="background-image: url(public/bg-cover.jpg);">
+
+                    <div class="flex flex-wrap">
+
+                        <div id="music" class="rounded-full w-[40px] h-[40px] hidden text-center justify-center items-center bg-emas shadow-xl fixed bottom-20 z-20 cursor-pointer">
+                            <p id="isi-music">⏸</p>
+                            <audio id="music-audio" src="public/star.mp3"></audio>
+                        </div>
+    
+                        <div id="navigation" class="w-[250px] h-[40px] bg-birdong rounded-lg fixed bottom-6 right-10 z-20 hidden shadow-xl  border-emas border">
+                            <ul class="flex flex-wrap justify-center items-center gap-14">
+                                <li class="text-center cursor-pointer">A</li>
+                                <li class="text-center cursor-pointer">B</li>
+                                <li class="text-center cursor-pointer">C</li>
+                                <li class="text-center cursor-pointer">D</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
                     <!-- top design -->
                     <div class="mx-auto text-center" data-aos="zoom-in">
                         <p class="text-emas font-judul text-[32px] sm:text-[40px] lg:text-[26px] mt-16 ml-5" >The Wedding Of</p>
@@ -92,14 +116,16 @@
         
                         <!-- hiasan sebelah kiri -->
                         <div class="w-[116px] h-[136px] bg-cover bg-center ml-0 mt-16" style="background-image: url(public/hiasan-3-1.png);" data-aos="fade-right"></div>
+
+                        <!-- <div class="text-center capitalize">
+                                <p class="text-emasTua font-ebGarmond text-lg font-semibold ">Assalamu'alaikum warahmatullahi wabarakatuh</p>
+                                <p class="mt-7 text-emas font-ebGarmond text-xs">Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:</p>
+                        </div> -->
         
                         <!-- Bride & Groom -->
                         <div class="relative">
 
-                                <div class="my-20 px-4 text-center capitalize">
-                                    <p class="text-emasTua font-ebGarmond text-lg font-semibold ">Assalamu'alaikum warahmatullahi wabarakatuh</p>
-                                    <p class="mt-7 text-emas font-ebGarmond text-xs">Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:</p>
-                                </div>
+
 
 
                               <!-- Bride -->
