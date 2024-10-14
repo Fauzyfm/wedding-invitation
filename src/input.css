@@ -21,3 +21,19 @@
       .fade-up {
         animation: fadeUp 1s ease-out;
       }
+
+
+    @keyframes fadeDown {
+      from {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    .fade-down {
+        animation: fadeDown 1s forwards;
+    }

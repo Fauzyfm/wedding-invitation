@@ -57,7 +57,7 @@ function kirimWhatsApp() {
     }
 
     var nomorWA = '6281382820300'; // Ganti dengan nomor WhatsApp tujuan
-    var pesan = `Halo, Saya *${nama}*, ingin melakukan konfirmasi kehadiran di acara pernikahan _____________. Alamat: ${alamat}. Konfirmasi kehadiran: ${konfirmasi}.`;    
+    var pesan = `Nama : *${nama}*,\n Alamat: ${alamat}. \n Konfirmasi kehadiran: ${konfirmasi}.`;    
 
 
     var urlWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navigation = document.getElementById('navigation')
     const musicAudio = document.getElementById('music-audio') 
     const isiMusic = document.getElementById('isi-music')
+    const isiIcon = document.getElementById('isi-icon')
     let isPlaying = false;
 
     document.getElementById('open-invitation').addEventListener('click', function() {
@@ -121,13 +122,27 @@ document.addEventListener("DOMContentLoaded", function() {
     musicButton.addEventListener('click', function () {
         if (!isPlaying) {
             musicAudio.play()
-            isiMusic.innerText = "⏸"
+            isiIcon.classList.remove('fa-pause')
+            isiIcon.classList.add('fa-music')
           } else {
             musicAudio.pause()
-            isiMusic.innerText = "▶"
+            isiIcon.classList.remove('fa-music')
+            isiIcon.classList.add('fa-pause')
           }
           isPlaying = !isPlaying;
     })
 
 
+    window.addEventListener('scroll', function(){
+        const scrollHeight = document.documentElement.scrollHeight;
+        const scrollPosition = window.innerHeight + window.scrollY;
+
+        if (scrollPosition >= scrollHeight - 500) {
+            navigation.classList.add("fade-down");
+            // navigation.classList.add("opacity-0");
+
+          } else {
+            navigation.classList.remove("fade-down");
+          }
+    })
     
