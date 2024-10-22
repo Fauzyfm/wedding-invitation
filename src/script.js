@@ -146,3 +146,56 @@ document.addEventListener("DOMContentLoaded", function() {
           }
     })
     
+
+
+
+// image slider
+
+const images = ["public/Galery/IMG_1862_copy_1.jpg", 
+                "public/Galery/IMG_1941_copy_1.jpg", 
+                "public/Galery/IMG_1971_copy_1.jpg",
+                "public/Galery/IMG_1783_copy_1.jpg",
+                "public/Galery/IMG_2011_copy_1.jpg",
+                "public/Galery/IMG_1575.jpg",
+                "public/Galery/IMG_1575.jpg",
+                "public/Galery/IMG_1575.jpg",
+                "public/Galery/IMG_1575.jpg",
+                "public/Galery/IMG_1575.jpg"]
+
+let currentIndex = 0;
+
+
+        // Fungsi untuk membuka lightbox dan menampilkan gambar sesuai indeks yang diklik
+        function openLightbox(index) {
+            currentIndex = index;  // Menyimpan indeks gambar yang diklik
+            updateImage();          // Memperbarui gambar di lightbox
+            // Menyembunyikan galeri dan menampilkan lightbox
+            // document.getElementById('gallerys').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('hidden');
+        }
+
+        // Fungsi untuk menutup lightbox dan kembali menampilkan galeri
+        function closeLightbox() {
+            // document.getElementById('gallerys').classList.remove('hidden');  // Menampilkan galeri
+            document.getElementById('lightbox').classList.add('hidden');    // Menyembunyikan lightbox
+        }
+
+        // Fungsi untuk memperbarui gambar di lightbox berdasarkan indeks saat ini
+        function updateImage() {
+            const imageElement = document.getElementById('lightbox-image');   // Mengambil elemen gambar di lightbox
+            const counterElement = document.getElementById('image-counter');  // Mengambil elemen counter
+            imageElement.src = images[currentIndex];                          // Mengubah sumber gambar
+            counterElement.textContent = `${currentIndex + 1} / ${images.length}`;  // Memperbarui teks counter
+        }
+
+        // Fungsi untuk menampilkan gambar berikutnya
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;  // Menambah indeks dengan modular agar tidak melebihi batas
+            updateImage();  // Memperbarui gambar di lightbox
+        }
+
+        // Fungsi untuk menampilkan gambar sebelumnya
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;  // Mengurangi indeks dengan modular
+            updateImage();  // Memperbarui gambar di lightbox
+        }
