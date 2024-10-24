@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         navigation.classList.remove('hidden')
-        // navigation.classList.add('fade-up')
+        navigation.classList.add('fade-up')
 
         musicAudio.play()
     })
@@ -136,7 +136,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function(){
         const scrollHeight = document.documentElement.scrollHeight;
         const scrollPosition = window.innerHeight + window.scrollY;
-        const scrollatas = window.scrollY
 
 
         if (scrollPosition >= scrollHeight - 500) {
@@ -147,12 +146,20 @@ document.addEventListener("DOMContentLoaded", function() {
             navigation.classList.remove("fade-down");
           }
 
-        if (scrollatas >= 500) {
-            navigation.classList.remove("fade-down");
-        } else {
-            navigation.classList.add("fade-down")
-        }
+
     })
+
+    // window.addEventListener('scroll', function(){
+    //     const scrollatas = window.scrollY
+
+    //     if (scrollatas >= 500) {
+    //         navigation.classList.add('fade-down')
+    //     } else {
+    //         navigation.classList.remove("fade-down");
+
+    //     }
+
+    // })
     
 
 
