@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function(){
         const scrollHeight = document.documentElement.scrollHeight;
         const scrollPosition = window.innerHeight + window.scrollY;
+        const scrollatas = window.scrollY
+
 
         if (scrollPosition >= scrollHeight - 500) {
             navigation.classList.add("fade-down");
@@ -144,6 +146,12 @@ document.addEventListener("DOMContentLoaded", function() {
           } else {
             navigation.classList.remove("fade-down");
           }
+
+        if (scrollatas >= 500) {
+            navigation.classList.remove("fade-down");
+        } else {
+            navigation.classList.add("fade-down")
+        }
     })
     
 
