@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         navigation.classList.remove('hidden')
-        navigation.classList.add('fade-up')
+        // navigation.classList.add('fade-up')
 
         musicAudio.play()
     })
