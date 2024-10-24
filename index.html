@@ -171,7 +171,7 @@
                               <!-- keterangan -->
                                <div class="flex flex-col justify-center item-center font-cinzel text-emas font-[20px] text-center gap-2 mt-5" data-aos="fade-up">
                                   <p>Tini Saputri</p>
-                                  <P class="text-xs">PUTRI KE - 4</P>
+                                  <P class="text-xs">ANAK KE - 4</P>
                                   <P  class="px-4 text-xs">DARI BAPAk Tarudi (Alm) & Ibu Suharti (Almh)</P>
                                </div>
                           </div>
@@ -188,7 +188,7 @@
                               <!-- keterangan -->
                                <div class="flex flex-col justify-center item-center font-cinzel text-emas font-[20px] text-center gap-2 mt-5" data-aos="fade-up">
                                   <p>AGUS APRIANTO</p>
-                                  <P class="text-xs">PUTRA KE - 5</P>
+                                  <P class="text-xs">ANAK KE - 5</P>
                                   <P class="text-xs px-4">DARI BAPAK MUNADI (Alm) & Ibu Sartiyah</P>
                                </div>
                           </div>
@@ -215,7 +215,7 @@
         
                         <!-- Isi -->
                          <div class="flex justify-end" data-aos="fade-left" data-aos-duration="1000">
-                             <div class="flex w-[337px] h-[391px] md:w-[250px] md:h-[391px] bg-abu mt-10 gap-2 shadow-xl">
+                             <div class="flex w-[337px] h-auto md:w-[250px]  bg-abu mt-10 gap-2 shadow-xl">
              
                                  <!-- kolom tulisan miring -->
                                  <div class="flex items-center text-clip w-[73px] bg-emasTua">
@@ -223,7 +223,7 @@
                                  </div>
              
                                  <!-- kolom utama -->
-                                  <div class="ml-2">
+                                  <div class="ml-2 mb-3">
                                     <div class="flex gap-1 pt-3">
                                         <div class="text-6xl font-bold text-emasTua ">22</div>
                                         <div class="text-lg text-emasTua">
@@ -232,12 +232,19 @@
                                         </div>
                                     </div>
                                      <hr class="border-t-2 border-emasTua my-2">
-                                     <p class="font-inter text-emasTua font-semibold py-2">Waktu Acara •</p>
+                                     <p class="font-inter text-emasTua font-semibold py-2">Akad •</p>
+                                     <div class="flex items-center text-emasTua">
+                                         <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                             <path fill-rule="evenodd" d="M 12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                                         </svg>
+                                         <p class="font-inter text-emasTua font-light text-xs">10.00 wib s/d 11.00 wib</p>
+                                     </div>
+                                     <p class="font-inter text-emasTua font-semibold py-2">Resepsi •</p>
                                      <div class="flex items-center text-emasTua">
                                          <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                                              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
                                          </svg>
-                                         <p class="font-inter text-emasTua font-light">10.00 wib s/d 14.00 wib</p>
+                                         <p class="font-inter text-emasTua font-light text-xs">11.00 wib s/d 14.00 wib</p>
                                      </div>
                                      <hr class="border-t-2 border-emasTua my-2">
     
@@ -508,29 +515,31 @@
                 
 
                 <!-- lightbox -->
-                <div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
-                    <div class="relative z-10">
-                        <!-- Bagian header lightbox: Counter dan tombol tutup -->
-                        <div class="flex justify-between items-center text-white p-4">
-                            <!-- Counter untuk menunjukkan gambar ke berapa -->
-                            <span id="image-counter">1 / 10</span>
-                            <div class="flex space-x-4">
-                                <!-- Tombol untuk menutup lightbox -->
-                                <i class="fas fa-times cursor-pointer" onclick="closeLightbox()"></i>
+                <div id="lightbox" class="hidden">
+                    <div  class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
+                        <div class="relative z-10">
+                            <!-- Bagian header lightbox: Counter dan tombol tutup -->
+                            <div class="flex justify-between items-center text-white p-4">
+                                <!-- Counter untuk menunjukkan gambar ke berapa -->
+                                <span id="image-counter">1 / 10</span>
+                                <div class="flex space-x-4">
+                                    <!-- Tombol untuk menutup lightbox -->
+                                    <i class="fas fa-times cursor-pointer" onclick="closeLightbox()"></i>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Bagian gambar lightbox -->
-                        <div class="flex justify-center items-center bg-no-repeat bg-origin-content">
-                            <!-- Menampilkan gambar yang sedang dipilih dalam lightbox -->
-                            <img id="lightbox-image" alt="Lightbox Image" class="max-w-full max-h-screen" height="600" width="800" />
-                        </div>
-                        <!-- Tombol navigasi kiri (untuk gambar sebelumnya) -->
-                        <div class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl cursor-pointer" onclick="prevImage()">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                        <!-- Tombol navigasi kanan (untuk gambar berikutnya) -->
-                        <div class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl cursor-pointer" onclick="nextImage()">
-                            <i class="fas fa-chevron-right"></i>
+                            <!-- Bagian gambar lightbox -->
+                            <div class="flex justify-center items-center bg-no-repeat bg-origin-content">
+                                <!-- Menampilkan gambar yang sedang dipilih dalam lightbox -->
+                                <img id="lightbox-image" alt="Lightbox Image" class="max-w-full max-h-screen" height="600" width="800" />
+                            </div>
+                            <!-- Tombol navigasi kiri (untuk gambar sebelumnya) -->
+                            <div class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl cursor-pointer" onclick="prevImage()">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <!-- Tombol navigasi kanan (untuk gambar berikutnya) -->
+                            <div class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl cursor-pointer" onclick="nextImage()">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
