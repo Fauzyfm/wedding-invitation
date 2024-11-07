@@ -167,14 +167,14 @@ document.addEventListener("DOMContentLoaded", function() {
 // image slider
 
 const images = ["public/Galery/IMG_1862_copy_1.jpg", 
-                "public/Galery/IMG_1941_copy_1.jpg", 
+                "public/Galery/IMG_1905-Edit.jpg", 
                 "public/Galery/IMG_1971_copy_1.jpg",
-                "public/Galery/IMG_1783_copy_1.jpg",
+                "public/Galery/IMG_1779-Edit.jpg",
                 "public/Galery/IMG_2011_copy_1.jpg",
-                "public/Galery/IMG_1575.jpg",
-                "public/Galery/IMG_1575.jpg",
-                "public/Galery/IMG_1575.jpg",
-                "public/Galery/IMG_1575.jpg",
+                "public/Galery/IMG_2390.JPEG.jpg",
+                "public/Galery/IMG_2041-Edit-2.jpg",
+                "public/Galery/IMG_2391.JPEG.jpg",
+                "public/Galery/IMG_1819-Edit.jpg",
                 "public/Galery/IMG_1575.jpg"]
 
 let currentIndex = 0;
